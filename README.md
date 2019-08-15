@@ -15,10 +15,10 @@ In the second study, we compare the percentage of energy demands which are met a
 You can try these experiments online without needing to install anything on your local machine using Google Colab. 
 
 ### unbalanced_three_phase_infrastructure.ipynb
-https://colab.research.google.com/github/zach401/acnsim_baseline_comparison/blob/master/unbalanced_three_phase_infrastructure.ipynb
+https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/unbalanced_three_phase_infrastructure.ipynb
 
 ### baseline_algorithms_w_constrained_infrastructure.ipynb
-https://colab.research.google.com/github/zach401/acnsim_baseline_comparison/blob/master/baseline_algorithms_w_constrained_infrastructure.ipynb
+https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/baseline_algorithms_w_constrained_infrastructure.ipynb
 
 *Note that the full experiment involves running many simulations, each 1 month long. Consider running this experiment locally or shortening the time horizon to avoid Colab timeouts.*
 
