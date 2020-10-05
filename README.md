@@ -150,15 +150,13 @@ The examples in this repository have been uses at the basis for several academic
 *IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm),
 Beijing, China, October 2019*
 
----
 Z. Lee, D. Johansson, S. H. Low. 
 [ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research](https://ev.caltech.edu/assets/pub/ACN_Sim_Open_Source_Simulator.pdf), 
 Proc. of the IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm),
 Beijing, China, October 2019
----
 
 Relevant Experiments:
 
 [1.1 Unbalanced Three Phase Systems](#1.1-unbalanced-three-phase-systems)
 
-[2.1 Comparing Algorithms with Constrained Infrastructure](2.1-comparing-algorithms-with-constrained-infrastructure)
+[2.1 Comparing Algorithms with Constrained Infrastructure](#2.1-comparing-algorithms-with-constrained-infrastructure)
