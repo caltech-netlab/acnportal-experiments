@@ -157,6 +157,6 @@ Beijing, China, October 2019
 
 Relevant Experiments:
 
-[1.1 Unbalanced Three Phase Systems](#1.1-unbalanced-three-phase-systems)
+[1.1 Unbalanced Three Phase Systems](#11-unbalanced-three-phase-systems)
 
-[2.1 Comparing Algorithms with Constrained Infrastructure](#2.1-comparing-algorithms-with-constrained-infrastructure)
+[2.1 Comparing Algorithms with Constrained Infrastructure](#21-comparing-algorithms-with-constrained-infrastructure)
