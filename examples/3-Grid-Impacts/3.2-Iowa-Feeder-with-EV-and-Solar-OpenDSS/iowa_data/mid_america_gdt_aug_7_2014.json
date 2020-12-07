@@ -1,0 +1,43 @@
+{
+    "name": "Mid America GET",
+    "effective": "2014-08-07",
+    "link": "",
+    "schedule": [
+        {
+            "id": "Summer-Weekday",
+            "effective_start": "06-01",
+            "effective_end": "09-30",
+            "dow_mask": "WEEKDAYS",
+            "times": [0, 8, 13, 18, 22],
+            "tariffs": [0.03430, 0.05550, 0.15015, 0.05550, 0.03430],
+            "demand_charge": 7.07
+        },
+        {
+            "id": "Summer-Weekend",
+            "effective_start": "06-01",
+            "effective_end": "09-30",
+            "dow_mask": "WEEKENDS",
+            "times": [0, 8, 22],
+            "tariffs": [0.05713, 0.05550, 0.05713],
+            "demand_charge": 7.07
+        },
+        {
+            "id": "Winter-Weekday",
+            "effective_start": "10-01",
+            "effective_end": "05-31",
+            "dow_mask": "WEEKDAYS",
+            "times": [0, 8, 22],
+            "tariffs": [0.03497, 0.03834, 0.03497],
+            "demand_charge": 6.77
+        },
+        {
+            "id": "Winter-Weekend",
+            "effective_start": "10-01",
+            "effective_end": "05-31",
+            "dow_mask": "WEEKENDS",
+            "times": [0, 8, 22],
+            "tariffs": [0.03497, 0.03834, 0.03497],
+            "demand_charge": 6.77
+        }
+    ]
+}

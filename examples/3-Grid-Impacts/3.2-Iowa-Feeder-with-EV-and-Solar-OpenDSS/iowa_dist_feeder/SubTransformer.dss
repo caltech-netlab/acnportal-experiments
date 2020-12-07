@@ -1,0 +1,28 @@
+//This file is to define the parameters of load tap changing substation transformer.
+
+//-------------------  substation transformer --------------------//
+New Transformer.Sub_Xfmr Phases=3 Windings=2 XHL=6.26591063                                 ! Transformer name, number of phases, number of windings, percent reactance high-to-low 
+~ wdg=1 bus=eq_source_bus.1.2.3   conn=delta kV=69.000000 kva=10000.00000000 %R=0.62659091  ! Winding number, bus, connection, voltage rating, kVA rating, percent resistance 
+~ wdg=2 bus=bus_Xfmr.1.2.3.0      conn=wye   kV=13.800000 kva=10000.00000000 %R=0.62659091
+
+
+
+//--------------------  3 single-phase tap changers -------------//
+
+New Transformer.sub_regulator_A Phases=1 bank=Reg1 Windings=2 XHL=0.0100000                 ! Tap changer name, number of phases, number of windings, percent reactance high-to-low 
+~ wdg=1 bus=bus_Xfmr.1 conn=wye kV=7.9677 kva=3500 %R=0.00100000
+~ wdg=2 bus=bus1.1     conn=wye kV=7.9677 kva=3500 %R=0.00100000 NumTaps=32 MaxTap=1.1000 MinTap=0.9000  
+! Winding number, bus, connection, voltage rating, kVA rating, percent resistance, total number of taps, max per unit tap, min per unit tap
+
+New Transformer.sub_regulator_B Phases=1 bank=Reg1 Windings=2 XHL=0.0100000
+~ wdg=1 bus=bus_Xfmr.2 conn=wye kV=7.9677 kva=3500 %R=0.00100000
+~ wdg=2 bus=bus1.2     conn=wye kV=7.9677 kva=3500 %R=0.00100000 NumTaps=32 MaxTap=1.1000 MinTap=0.9000
+
+New Transformer.sub_regulator_C Phases=1 bank=Reg1 Windings=2 XHL=0.0100000
+~ wdg=1 bus=bus_Xfmr.3 conn=wye kV=7.9677 kva=3500 %R=0.00100000
+~ wdg=2 bus=bus1.3     conn=wye kV=7.9677 kva=3500 %R=0.00100000 NumTaps=32 MaxTap=1.1000 MinTap=0.9000
+
+
+
+
+

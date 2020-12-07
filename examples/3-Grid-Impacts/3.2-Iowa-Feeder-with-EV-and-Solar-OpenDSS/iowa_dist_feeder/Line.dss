@@ -1,0 +1,989 @@
+// This file is to define the parameters of line segments, including the overhead lines and underground cables with a variety of phase configurations.
+
+//***************************************************************************************//
+//                                             Feeder A
+//***************************************************************************************//
+//--------------------------------------------------------//
+New Line.L_1001_1002 phases=3 Bus1=bus1001.1.2.3 Bus2=bus1002.1.2.3    ! Line segment name, number of phases, 1st bus, 2nd bus
+ ~ length=2967 units=Ft LineCode=UG_3p_type1		         ! Length, unit, line configuration
+
+//--------------------------------------------------------//
+New Line.L_1002_1003 phases=3 Bus1=bus1002.1.2.3 Bus2=bus1003.1.2.3
+ ~ length=372 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_1002_1004 phases=3 Bus1=bus1002.1.2.3 Bus2=bus1004.1.2.3
+ ~ length=638 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_1004_1005 phases=3 Bus1=bus1004.1.2.3 Bus2=bus1005.1.2.3
+ ~ length=394 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_1005_1006 phases=3 Bus1=bus1005.1.2.3 Bus2=bus1006.1.2.3
+ ~ length=1049 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//------------AB
+New Line.L_1006_1007 phases=2 Bus1=bus1006.1.2 Bus2=bus1007.1.2
+ ~ length=2000 units=Ft LineCode=OH_2p_type2
+
+//--------------------------------------------------------//
+New Line.L_1006_1008 phases=3 Bus1=bus1006.1.2.3 Bus2=bus1008.1.2.3
+ ~ length=454 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_1008_1009 phases=3 Bus1=bus1008.1.2.3 Bus2=bus1009.1.2.3
+ ~ length=1082 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_1009_1010 phases=3 Bus1=bus1009.1.2.3 Bus2=bus1010.1.2.3
+ ~ length=169 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_1009_1011 phases=3 Bus1=bus1009.1.2.3 Bus2=bus1011.1.2.3
+ ~ length=60 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_1011_1012 phases=3 Bus1=bus1011.1.2.3 Bus2=bus1012.1.2.3
+ ~ length=60 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_1012_1013 phases=3 Bus1=bus1012.1.2.3 Bus2=bus1013.1.2.3
+ ~ length=306 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//----------B
+New Line.L_1013_1014 phases=1 Bus1=bus1013.2.0 Bus2=bus1014.2.0
+ ~ length=208 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//----------B
+New Line.L_1014_1015 phases=1 Bus1=bus1014.2.0 Bus2=bus1015.2.0
+ ~ length=126 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//----------C
+New Line.L_1013_1016 phases=1 Bus1=bus1013.3.0 Bus2=bus1016.3.0
+ ~ length=468 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//----------C
+New Line.L_1016_1017 phases=1 Bus1=bus1016.3.0 Bus2=bus1017.3.0
+ ~ length=71 units=Ft LineCode=UG_1p_type2
+
+
+
+
+
+
+//***************************************************************************************//
+//                                             Feeder B
+//***************************************************************************************//
+//--------------------------------------------------------//
+New Line.L_2001_2002 phases=3 Bus1=bus2001.1.2.3 Bus2=bus2002.1.2.3
+ ~ length=1388 units=Ft LineCode=UG_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2002_2003 phases=3 Bus1=bus2002.1.2.3 Bus2=bus2003.1.2.3
+ ~ length=1281 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2003_2004 phases=3 Bus1=bus2003.1.2.3 Bus2=bus2004.1.2.3
+ ~ length=798 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2004_2005 phases=3 Bus1=bus2004.1.2.3 Bus2=bus2005.1.2.3
+ ~ length=317 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2005_2006 phases=3 Bus1=bus2005.1.2.3 Bus2=bus2006.1.2.3
+ ~ length=145 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//--------A
+New Line.L_2006_2007 phases=1 Bus1=bus2006.1 Bus2=bus2007.1
+ ~ length=245 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//--------A
+New Line.L_2007_2008 phases=1 Bus1=bus2007.1 Bus2=bus2008.1
+ ~ length=125 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//--------A
+New Line.L_2007_2009 phases=1 Bus1=bus2007.1 Bus2=bus2009.1
+ ~ length=161 units=Ft LineCode=OH_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_2006_2010 phases=3 Bus1=bus2006.1.2.3 Bus2=bus2010.1.2.3
+ ~ length=170 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2010_2011 phases=3 Bus1=bus2010.1.2.3 Bus2=bus2011.1.2.3
+ ~ length=275 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2011_2012 phases=3 Bus1=bus2011.1.2.3 Bus2=bus2012.1.2.3
+ ~ length=503 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2013_2014 phases=3 Bus1=bus2013.1.2.3 Bus2=bus2014.1.2.3
+ ~ length=268 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//--------B
+New Line.L_2014_2015 phases=1 Bus1=bus2014.2 Bus2=bus2015.2
+ ~ length=120 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_2014_2016 phases=3 Bus1=bus2014.1.2.3 Bus2=bus2016.1.2.3
+ ~ length=257 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2016_2017 phases=3 Bus1=bus2016.1.2.3 Bus2=bus2017.1.2.3
+ ~ length=174 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2017_2018 phases=3 Bus1=bus2017.1.2.3 Bus2=bus2018.1.2.3
+ ~ length=447 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2013_2019 phases=3 Bus1=bus2013.1.2.3 Bus2=bus2019.1.2.3
+ ~ length=45 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//--------B
+New Line.L_2019_2020 phases=1 Bus1=bus2019.2 Bus2=bus2020.2
+ ~ length=642 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_2019_2021 phases=3 Bus1=bus2019.1.2.3 Bus2=bus2021.1.2.3
+ ~ length=43 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//--------C
+New Line.L_2021_2022 phases=1 Bus1=bus2021.3 Bus2=bus2022.3
+ ~ length=205 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//--------C
+New Line.L_2022_2023 phases=1 Bus1=bus2022.3 Bus2=bus2023.3
+ ~ length=150 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//--------C
+New Line.L_2023_2024 phases=1 Bus1=bus2023.3 Bus2=bus2024.3
+ ~ length=408 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//--------C
+New Line.L_2024_2025 phases=1 Bus1=bus2024.3 Bus2=bus2025.3
+ ~ length=331 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_2026_2027 phases=3 Bus1=bus2026.1.2.3 Bus2=bus2027.1.2.3
+ ~ length=369 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2027_2028 phases=3 Bus1=bus2027.1.2.3 Bus2=bus2028.1.2.3
+ ~ length=285 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2028_2029 phases=3 Bus1=bus2028.1.2.3 Bus2=bus2029.1.2.3
+ ~ length=131 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2029_2030 phases=3 Bus1=bus2029.1.2.3 Bus2=bus2030.1.2.3
+ ~ length=165 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2030_2031 phases=3 Bus1=bus2030.1.2.3 Bus2=bus2031.1.2.3
+ ~ length=245 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2027_2032 phases=3 Bus1=bus2027.1.2.3 Bus2=bus2032.1.2.3
+ ~ length=149 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2032_2033 phases=3 Bus1=bus2032.1.2.3 Bus2=bus2033.1.2.3
+ ~ length=289 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2033_2034 phases=3 Bus1=bus2033.1.2.3 Bus2=bus2034.1.2.3
+ ~ length=185 units=Ft LineCode=OH_3p_type5
+
+//--------------------------------------------------------//
+New Line.L_2033_2035 phases=3 Bus1=bus2033.1.2.3 Bus2=bus2035.1.2.3
+ ~ length=160 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2035_2036 phases=3 Bus1=bus2035.1.2.3 Bus2=bus2036.1.2.3
+ ~ length=160 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2036_2037 phases=3 Bus1=bus2036.1.2.3 Bus2=bus2037.1.2.3
+ ~ length=80 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2037_2038 phases=3 Bus1=bus2037.1.2.3 Bus2=bus2038.1.2.3
+ ~ length=192 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2038_2039 phases=3 Bus1=bus2038.1.2.3 Bus2=bus2039.1.2.3
+ ~ length=800 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2039_2040 phases=3 Bus1=bus2039.1.2.3 Bus2=bus2040.1.2.3
+ ~ length=309 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2040_2041 phases=3 Bus1=bus2040.1.2.3 Bus2=bus2041.1.2.3
+ ~ length=383 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_2039_2042 phases=3 Bus1=bus2039.1.2.3 Bus2=bus2042.1.2.3
+ ~ length=35 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2042_2043 phases=3 Bus1=bus2042.1.2.3 Bus2=bus2043.1.2.3
+ ~ length=158 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2043_2044 phases=3 Bus1=bus2043.1.2.3 Bus2=bus2044.1.2.3
+ ~ length=342 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//----------B
+New Line.L_2044_2045 phases=1 Bus1=bus2044.2 Bus2=bus2045.2
+ ~ length=323 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//----------B
+New Line.L_2045_2046 phases=1 Bus1=bus2045.2 Bus2=bus2046.2
+ ~ length=330 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//----------B
+New Line.L_2045_2047 phases=1 Bus1=bus2045.2 Bus2=bus2047.2
+ ~ length=189 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//----------B
+New Line.L_2047_2048 phases=1 Bus1=bus2047.2 Bus2=bus2048.2
+ ~ length=259 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_2044_2049 phases=3 Bus1=bus2044.1.2.3 Bus2=bus2049.1.2.3
+ ~ length=130 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2049_2050 phases=3 Bus1=bus2049.1.2.3 Bus2=bus2050.1.2.3
+ ~ length=124 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2050_2051 phases=3 Bus1=bus2050.1.2.3 Bus2=bus2051.1.2.3
+ ~ length=139 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2051_2052 phases=3 Bus1=bus2051.1.2.3 Bus2=bus2052.1.2.3
+ ~ length=134 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2044_2053 phases=3 Bus1=bus2044.1.2.3 Bus2=bus2053.1.2.3
+ ~ length=464 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2053_2054 phases=3 Bus1=bus2053.1.2.3 Bus2=bus2054.1.2.3
+ ~ length=139 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2054_2055 phases=1 Bus1=bus2054.1.2.3 Bus2=bus2055.1.2.3
+ ~ length=156 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2055_2056 phases=1 Bus1=bus2055.1.2.3 Bus2=bus2056.1.2.3
+ ~ length=204 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2053_2057 phases=3 Bus1=bus2053.1.2.3 Bus2=bus2057.1.2.3
+ ~ length=761 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2057_2058 phases=3 Bus1=bus2057.1.2.3 Bus2=bus2058.1.2.3
+ ~ length=407 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2057_2059 phases=3 Bus1=bus2057.1.2.3 Bus2=bus2059.1.2.3
+ ~ length=685 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_2059_2060 phases=3 Bus1=bus2059.1.2.3 Bus2=bus2060.1.2.3
+ ~ length=304 units=Ft LineCode=UG_3p_type2
+
+
+
+
+
+
+
+//***************************************************************************************//
+//                                             Feeder C
+//***************************************************************************************//
+//--------------------------------------------------------//
+New Line.L_3001_3003 phases=3 Bus1=bus3001.1.2.3 Bus2=bus3003.1.2.3
+ ~ length=2307 units=Ft LineCode=UG_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3003_3002 phases=3 Bus1=bus3003.1.2.3 Bus2=bus3002.1.2.3
+ ~ length=85 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_3003_3004 phases=3 Bus1=bus3003.1.2.3 Bus2=bus3004.1.2.3
+ ~ length=81 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_3003_3005 phases=3 Bus1=bus3003.1.2.3 Bus2=bus3005.1.2.3
+ ~ length=1997 units=Ft LineCode=UG_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3005_3006 phases=3 Bus1=bus3005.1.2.3 Bus2=bus3006.1.2.3
+ ~ length=311 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3006_3007 phases=3 Bus1=bus3006.1.2.3 Bus2=bus3007.1.2.3
+ ~ length=370 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3005_3008 phases=3 Bus1=bus3005.1.2.3 Bus2=bus3008.1.2.3
+ ~ length=136 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//------------A
+New Line.L_3008_3009 phases=1 Bus1=bus3008.1 Bus2=bus3009.1
+ ~ length=161 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3009_3010 phases=1 Bus1=bus3009.1 Bus2=bus3010.1
+ ~ length=347 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3010_3011 phases=1 Bus1=bus3010.1 Bus2=bus3011.1
+ ~ length=265 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3011_3012 phases=1 Bus1=bus3011.1 Bus2=bus3012.1
+ ~ length=312 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------B
+New Line.L_3008_3013 phases=1 Bus1=bus3008.2 Bus2=bus3013.2
+ ~ length=170 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------B
+New Line.L_3013_3014 phases=1 Bus1=bus3013.2 Bus2=bus3014.2
+ ~ length=295 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//
+New Line.L_3008_3015 phases=3 Bus1=bus3008.1.2.3 Bus2=bus3015.1.2.3
+ ~ length=322 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//------------B
+New Line.L_3015_3016 phases=1 Bus1=bus3015.2 Bus2=bus3016.2
+ ~ length=210 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------B
+New Line.L_3016_3017 phases=1 Bus1=bus3016.2 Bus2=bus3017.2
+ ~ length=259 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3015_3018 phases=1 Bus1=bus3015.3 Bus2=bus3018.3
+ ~ length=181 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3018_3019 phases=1 Bus1=bus3018.3 Bus2=bus3019.3
+ ~ length=281 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3019_3020 phases=1 Bus1=bus3019.3 Bus2=bus3020.3
+ ~ length=307 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3020_3021 phases=1 Bus1=bus3020.3 Bus2=bus3021.3
+ ~ length=303 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//
+New Line.L_3015_3022 phases=3 Bus1=bus3015.1.2.3 Bus2=bus3022.1.2.3
+ ~ length=289 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//------------A
+New Line.L_3022_3023 phases=1 Bus1=bus3022.1 Bus2=bus3023.1
+ ~ length=181 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3023_3024 phases=1 Bus1=bus3023.1 Bus2=bus3024.1
+ ~ length=320 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3024_3025 phases=1 Bus1=bus3024.1 Bus2=bus3025.1
+ ~ length=331 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3022_3026 phases=1 Bus1=bus3022.1 Bus2=bus3026.1
+ ~ length=164 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3026_3027 phases=1 Bus1=bus3026.1 Bus2=bus3027.1
+ ~ length=368 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3027_3028 phases=1 Bus1=bus3027.1 Bus2=bus3028.1
+ ~ length=241 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------A
+New Line.L_3028_3029 phases=1 Bus1=bus3028.1 Bus2=bus3029.1
+ ~ length=317 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//
+New Line.L_3022_3030 phases=3 Bus1=bus3022.1.2.3 Bus2=bus3030.1.2.3
+ ~ length=304 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3030_3035 phases=3 Bus1=bus3030.1.2.3 Bus2=bus3035.1.2.3
+ ~ length=103 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3035_3036 phases=3 Bus1=bus3035.1.2.3 Bus2=bus3036.1.2.3
+ ~ length=271 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3036_3037 phases=3 Bus1=bus3036.1.2.3 Bus2=bus3037.1.2.3
+ ~ length=136 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3037_3038 phases=3 Bus1=bus3037.1.2.3 Bus2=bus3038.1.2.3
+ ~ length=252 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3038_3039 phases=3 Bus1=bus3038.1.2.3 Bus2=bus3039.1.2.3
+ ~ length=235 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3039_3053 phases=3 Bus1=bus3039.1.2.3 Bus2=bus3053.1.2.3
+ ~ length=263 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3053_3054 phases=3 Bus1=bus3053.1.2.3 Bus2=bus3054.1.2.3
+ ~ length=280 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3053_3055 phases=1 Bus1=bus3053.2 Bus2=bus3055.2
+ ~ length=1335 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3055_3056 phases=1 Bus1=bus3055.2 Bus2=bus3056.2
+ ~ length=128 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3056_3057 phases=1 Bus1=bus3056.2 Bus2=bus3057.2
+ ~ length=178 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3057_3058 phases=1 Bus1=bus3057.2 Bus2=bus3058.2
+ ~ length=178 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3058_3059 phases=1 Bus1=bus3058.2 Bus2=bus3059.2
+ ~ length=274 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3059_3060 phases=1 Bus1=bus3059.2 Bus2=bus3060.2
+ ~ length=77 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3060_3061 phases=1 Bus1=bus3060.2 Bus2=bus3061.2
+ ~ length=184 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3055_3062 phases=1 Bus1=bus3055.2 Bus2=bus3062.2
+ ~ length=443 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3062_3063 phases=1 Bus1=bus3062.2 Bus2=bus3063.2
+ ~ length=198 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3063_3064 phases=1 Bus1=bus3063.2 Bus2=bus3064.2
+ ~ length=157 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3064_3065 phases=1 Bus1=bus3064.2 Bus2=bus3065.2
+ ~ length=205 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3065_3066 phases=1 Bus1=bus3065.2 Bus2=bus3066.2
+ ~ length=123 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3066_3067 phases=1 Bus1=bus3066.2 Bus2=bus3067.2
+ ~ length=274 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_3030_3040 phases=3 Bus1=bus3030.1.2.3 Bus2=bus3040.1.2.3
+ ~ length=332 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//------------C
+New Line.L_3040_3044 phases=1 Bus1=bus3040.3 Bus2=bus3044.3
+ ~ length=144 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3044_3045 phases=1 Bus1=bus3044.3 Bus2=bus3045.3
+ ~ length=393 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3040_3041 phases=1 Bus1=bus3040.3 Bus2=bus3041.3
+ ~ length=121 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3041_3042 phases=1 Bus1=bus3041.3 Bus2=bus3042.3
+ ~ length=328 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//------------C
+New Line.L_3042_3043 phases=1 Bus1=bus3042.3 Bus2=bus3043.3
+ ~ length=418 units=Ft LineCode=OH_1p_type5
+
+//--------------------------------------------------------//
+New Line.L_3040_3046 phases=3 Bus1=bus3040.1.2.3 Bus2=bus3046.1.2.3
+ ~ length=329 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3046_3047 phases=3 Bus1=bus3046.1.2.3 Bus2=bus3047.1.2.3
+ ~ length=219 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3046_3048 phases=3 Bus1=bus3046.1.2.3 Bus2=bus3048.1.2.3
+ ~ length=130 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3048_3049 phases=3 Bus1=bus3048.1.2.3 Bus2=bus3049.1.2.3
+ ~ length=226 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3049_3050 phases=3 Bus1=bus3049.1.2.3 Bus2=bus3050.1.2.3
+ ~ length=167 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3050_3051 phases=3 Bus1=bus3050.1.2.3 Bus2=bus3051.1.2.3
+ ~ length=360 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3051_3052 phases=3 Bus1=bus3051.1.2.3 Bus2=bus3052.1.2.3
+ ~ length=292 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3030_3031 phases=3 Bus1=bus3030.1.2.3 Bus2=bus3031.1.2.3
+ ~ length=243 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3031_3032 phases=3 Bus1=bus3031.1.2.3 Bus2=bus3032.1.2.3
+ ~ length=251 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3032_3033 phases=3 Bus1=bus3032.1.2.3 Bus2=bus3033.1.2.3
+ ~ length=388 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3033_3034 phases=3 Bus1=bus3033.1.2.3 Bus2=bus3034.1.2.3
+ ~ length=257 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3034_3068 phases=3 Bus1=bus3034.1.2.3 Bus2=bus3068.1.2.3
+ ~ length=164 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3068_3069 phases=3 Bus1=bus3068.1.2.3 Bus2=bus3069.1.2.3
+ ~ length=329 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3069_3070 phases=3 Bus1=bus3069.1.2.3 Bus2=bus3070.1.2.3
+ ~ length=107 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_3070_3071 phases=3 Bus1=bus3070.1.2.3 Bus2=bus3071.1.2.3
+ ~ length=141 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_3071_3072 phases=3 Bus1=bus3071.1.2.3 Bus2=bus3072.1.2.3
+ ~ length=90 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//
+New Line.L_3069_3073 phases=3 Bus1=bus3069.1.2.3 Bus2=bus3073.1.2.3
+ ~ length=20 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3073_3074 phases=3 Bus1=bus3073.1.2.3 Bus2=bus3074.1.2.3
+ ~ length=340 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3068_3075 phases=3 Bus1=bus3068.1.2.3 Bus2=bus3075.1.2.3
+ ~ length=188 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3076_3077 phases=3 Bus1=bus3076.1.2.3 Bus2=bus3077.1.2.3
+ ~ length=877 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3077_3078 phases=3 Bus1=bus3077.1.2.3 Bus2=bus3078.1.2.3
+ ~ length=80 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3076_3079 phases=3 Bus1=bus3076.1.2.3 Bus2=bus3079.1.2.3
+ ~ length=191 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3079_3080 phases=3 Bus1=bus3079.1.2.3 Bus2=bus3080.1.2.3
+ ~ length=604 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3080_3081 phases=3 Bus1=bus3080.1.2.3 Bus2=bus3081.1.2.3
+ ~ length=195 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//
+New Line.L_3080_3082 phases=3 Bus1=bus3080.1.2.3 Bus2=bus3082.1.2.3
+ ~ length=540 units=Ft LineCode=OH_3p_type1
+
+//--------------------------------------------------------//------------A
+New Line.L_3082_3083 phases=1 Bus1=bus3082.1 Bus2=bus3083.1
+ ~ length=125 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3083_3084 phases=1 Bus1=bus3083.1 Bus2=bus3084.1
+ ~ length=196 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3084_3085 phases=1 Bus1=bus3084.1 Bus2=bus3085.1
+ ~ length=515 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3085_3086 phases=1 Bus1=bus3085.1 Bus2=bus3086.1
+ ~ length=338 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3086_3087 phases=1 Bus1=bus3086.1 Bus2=bus3087.1
+ ~ length=239 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3087_3088 phases=1 Bus1=bus3087.1 Bus2=bus3088.1
+ ~ length=420 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3088_3089 phases=1 Bus1=bus3088.1 Bus2=bus3089.1
+ ~ length=112 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3089_3090 phases=1 Bus1=bus3089.1 Bus2=bus3090.1
+ ~ length=565 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3090_3091 phases=1 Bus1=bus3090.1 Bus2=bus3091.1
+ ~ length=222 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_3082_3092 phases=3 Bus1=bus3082.1.2.3 Bus2=bus3092.1.2.3
+ ~ length=185 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3092_3093 phases=1 Bus1=bus3092.1 Bus2=bus3093.1
+ ~ length=230 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3093_3094 phases=1 Bus1=bus3093.1 Bus2=bus3094.1
+ ~ length=125 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3094_3095 phases=1 Bus1=bus3094.1 Bus2=bus3095.1
+ ~ length=65 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3095_3096 phases=1 Bus1=bus3095.1 Bus2=bus3096.1
+ ~ length=296 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3096_3097 phases=1 Bus1=bus3096.1 Bus2=bus3097.1
+ ~ length=117 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3092_3098 phases=1 Bus1=bus3092.2 Bus2=bus3098.2
+ ~ length=284 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3098_3099 phases=1 Bus1=bus3098.2 Bus2=bus3099.2
+ ~ length=368 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_3092_3100 phases=3 Bus1=bus3092.1.2.3 Bus2=bus3100.1.2.3
+ ~ length=91 units=Ft LineCode=UG_3p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3100_3101 phases=1 Bus1=bus3100.3 Bus2=bus3101.3
+ ~ length=157 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3101_3102 phases=1 Bus1=bus3101.3 Bus2=bus3102.3
+ ~ length=225 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3102_3103 phases=1 Bus1=bus3102.3 Bus2=bus3103.3
+ ~ length=134 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3100_3104 phases=1 Bus1=bus3100.3 Bus2=bus3104.3
+ ~ length=223 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3104_3105 phases=1 Bus1=bus3104.3 Bus2=bus3105.3
+ ~ length=120 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3105_3106 phases=1 Bus1=bus3105.3 Bus2=bus3106.3
+ ~ length=181 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_3082_3107 phases=3 Bus1=bus3082.1.2.3 Bus2=bus3107.1.2.3
+ ~ length=1461 units=Ft LineCode=UG_3p_type1
+
+//--------------------------------------------------------//------------A
+New Line.L_3107_3108 phases=1 Bus1=bus3107.1 Bus2=bus3108.1
+ ~ length=466 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3108_3109 phases=1 Bus1=bus3108.1 Bus2=bus3109.1
+ ~ length=136 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3109_3110 phases=1 Bus1=bus3109.1 Bus2=bus3110.1
+ ~ length=152 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3110_3111 phases=1 Bus1=bus3110.1 Bus2=bus3111.1
+ ~ length=276 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3111_3112 phases=1 Bus1=bus3111.1 Bus2=bus3112.1
+ ~ length=328 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3107_3113 phases=1 Bus1=bus3107.2 Bus2=bus3113.2
+ ~ length=245 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3113_3114 phases=1 Bus1=bus3113.2 Bus2=bus3114.2
+ ~ length=149 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3114_3115 phases=1 Bus1=bus3114.2 Bus2=bus3115.2
+ ~ length=331 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3113_3116 phases=1 Bus1=bus3113.2 Bus2=bus3116.2
+ ~ length=456 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3116_3117 phases=1 Bus1=bus3116.2 Bus2=bus3117.2
+ ~ length=112 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//
+New Line.L_3107_3118 phases=3 Bus1=bus3107.1.2.3 Bus2=bus3118.1.2.3
+ ~ length=2267 units=Ft LineCode=UG_3p_type1
+
+//--------------------------------------------------------//------------B
+New Line.L_3118_3119 phases=1 Bus1=bus3118.2 Bus2=bus3119.2
+ ~ length=464 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3119_3120 phases=1 Bus1=bus3119.2 Bus2=bus3120.2
+ ~ length=350 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3120_3121 phases=1 Bus1=bus3120.2 Bus2=bus3121.2
+ ~ length=206 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3121_3122 phases=1 Bus1=bus3121.2 Bus2=bus3122.2
+ ~ length=177 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3119_3123 phases=1 Bus1=bus3119.2 Bus2=bus3123.2
+ ~ length=91 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3123_3124 phases=1 Bus1=bus3123.2 Bus2=bus3124.2
+ ~ length=67 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3124_3125 phases=1 Bus1=bus3124.2 Bus2=bus3125.2
+ ~ length=151 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3125_3126 phases=1 Bus1=bus3125.2 Bus2=bus3126.2
+ ~ length=343 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3126_3127 phases=1 Bus1=bus3126.2 Bus2=bus3127.2
+ ~ length=234 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3127_3128 phases=1 Bus1=bus3127.2 Bus2=bus3128.2
+ ~ length=238 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3128_3129 phases=1 Bus1=bus3128.2 Bus2=bus3129.2
+ ~ length=243 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3129_3130 phases=1 Bus1=bus3129.2 Bus2=bus3130.2
+ ~ length=230 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------B
+New Line.L_3130_3131 phases=1 Bus1=bus3130.2 Bus2=bus3131.2
+ ~ length=194 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3118_3132 phases=1 Bus1=bus3118.1 Bus2=bus3132.1
+ ~ length=501 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3132_3133 phases=1 Bus1=bus3132.1 Bus2=bus3133.1
+ ~ length=145 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3133_3134 phases=1 Bus1=bus3133.1 Bus2=bus3134.1
+ ~ length=281 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3134_3135 phases=1 Bus1=bus3134.1 Bus2=bus3135.1
+ ~ length=240 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3135_3136 phases=1 Bus1=bus3135.1 Bus2=bus3136.1
+ ~ length=367 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3133_3137 phases=1 Bus1=bus3133.1 Bus2=bus3137.1
+ ~ length=252 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3137_3138 phases=1 Bus1=bus3137.1 Bus2=bus3138.1
+ ~ length=351 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------A
+New Line.L_3138_3139 phases=1 Bus1=bus3138.1 Bus2=bus3139.1
+ ~ length=289 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3107_3140 phases=1 Bus1=bus3107.3 Bus2=bus3140.3
+ ~ length=255 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3140_3141 phases=1 Bus1=bus3140.3 Bus2=bus3141.3
+ ~ length=134 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3141_3142 phases=1 Bus1=bus3141.3 Bus2=bus3142.3
+ ~ length=193 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3142_3143 phases=1 Bus1=bus3142.3 Bus2=bus3143.3
+ ~ length=202 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3140_3148 phases=1 Bus1=bus3140.3 Bus2=bus3148.3
+ ~ length=147 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3148_3149 phases=1 Bus1=bus3148.3 Bus2=bus3149.3
+ ~ length=253 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3149_3150 phases=1 Bus1=bus3149.3 Bus2=bus3150.3
+ ~ length=139 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3150_3151 phases=1 Bus1=bus3150.3 Bus2=bus3151.3
+ ~ length=156 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3151_3152 phases=1 Bus1=bus3151.3 Bus2=bus3152.3
+ ~ length=260 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3152_3153 phases=1 Bus1=bus3152.3 Bus2=bus3153.3
+ ~ length=139 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3153_3154 phases=1 Bus1=bus3153.3 Bus2=bus3154.3
+ ~ length=119 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3154_3155 phases=1 Bus1=bus3154.3 Bus2=bus3155.3
+ ~ length=505 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3140_3156 phases=1 Bus1=bus3140.3 Bus2=bus3156.3
+ ~ length=319 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3156_3144 phases=1 Bus1=bus3156.3 Bus2=bus3144.3
+ ~ length=122 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3144_3145 phases=1 Bus1=bus3144.3 Bus2=bus3145.3
+ ~ length=178 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3145_3146 phases=1 Bus1=bus3145.3 Bus2=bus3146.3
+ ~ length=178 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3146_3147 phases=1 Bus1=bus3146.3 Bus2=bus3147.3
+ ~ length=178 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3156_3157 phases=1 Bus1=bus3156.3 Bus2=bus3157.3
+ ~ length=153 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3157_3158 phases=1 Bus1=bus3157.3 Bus2=bus3158.3
+ ~ length=295 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3158_3159 phases=1 Bus1=bus3158.3 Bus2=bus3159.3
+ ~ length=257 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3159_3160 phases=1 Bus1=bus3159.3 Bus2=bus3160.3
+ ~ length=243 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3160_3161 phases=1 Bus1=bus3160.3 Bus2=bus3161.3
+ ~ length=237 units=Ft LineCode=UG_1p_type2
+
+//--------------------------------------------------------//------------C
+New Line.L_3161_3162 phases=1 Bus1=bus3161.3 Bus2=bus3162.3
+ ~ length=176 units=Ft LineCode=UG_1p_type2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

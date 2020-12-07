@@ -1,0 +1,58 @@
+// This file is to define the parameters of circuit breakers.
+
+
+//---------------------Circuit Breakers of Feeder A----------------------// 
+New Line.CB_101  Phases=3  Bus1=bus1.1.2.3   Bus2=bus1001.1.2.3  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0
+New Line.CB_102  Phases=3  Bus1=bus1010.1.2.3   Bus2=bus1010.4.5.6  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0   ! Bus2 is supposed to connect to bus2057.1.2.3 when reconfiguring, normally open
+! Circuit breaker name, number of phases, 1st bus, 2nd bus, this line is a switch, positive-sequence resistance per uint length, zero-sequence resistance per uint length, positive-sequence reactance per uint length, zero-sequence reactance per uint length, positive-sequence capacitance per uint length, zero-sequence capacitance per uint length. Note that we use Bus2=bus2057.4.5.6 to achieve a normally open circuit breaker, i.e. connecting the energized nodes (bus1010.1.2.3) to non-energized nodes (bus2057.4.5.6).
+
+
+//---------------------Circuit Breakers of Feeder B----------------------// 
+New Line.CB_201  Phases=3  Bus1=bus1.1.2.3      Bus2=bus2001.1.2.3  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0
+New Line.CB_202  Phases=3  Bus1=bus2012.1.2.3   Bus2=bus2013.1.2.3  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0
+New Line.CB_203  Phases=3  Bus1=bus2021.1.2.3   Bus2=bus2026.1.2.3  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0
+New Line.CB_204  Phases=3  Bus1=bus2013.1.2.3   Bus2=bus2013.4.5.6  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0  ! Bus2 is supposed to connect to bus3005.1.2.3 when reconfiguring, normally open
+
+
+//---------------------Circuit Breakers of Feeder C----------------------// 
+New Line.CB_301  Phases=3  Bus1=bus1.1.2.3      Bus2=bus3001.1.2.3  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0
+New Line.CB_302  Phases=3  Bus1=bus3075.1.2.3   Bus2=bus3076.1.2.3  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0
+New Line.CB_303  Phases=3  Bus1=bus3081.1.2.3   Bus2=bus3081.4.5.6  Switch=y  r1=1e-4  r0=1e-4  x1=0  x0=0  c1=0  c0=0   ! Bus2 is supposed to connect to bus2016.1.2.3 when reconfiguring, normally open
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

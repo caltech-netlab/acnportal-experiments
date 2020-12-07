@@ -1,0 +1,5 @@
+// This file is to define the parameters of shunt capacitor banks.
+
+New Capacitor.CAP_201 phases=3 bus1=bus2038.1.2.3 kV=13.80000 kvar=50.00000000 enabled=Yes            ! Capacitor bank name, number of phases, bus name, kV rating, kVar rating, enabled
+New Capacitor.CAP_301 phases=3 bus1=bus3079.1.2.3 kV=13.80000 kvar=50.00000000 enabled=Yes
+

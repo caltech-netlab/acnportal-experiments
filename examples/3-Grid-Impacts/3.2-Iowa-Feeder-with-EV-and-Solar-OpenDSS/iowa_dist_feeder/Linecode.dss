@@ -1,0 +1,73 @@
+// This file is to define the line configurations, including the series resistance matrix, series reactance matrix, and shunt nodal capacitance matrix with a variety of phase configurations.
+// For the linecode name, OH denotes overhead, UG denotes underground, 1p denotes 1 phase, 3p denotes 3 phases, "type+number" denotes conductor type.
+
+//--------------------------------------------------------------------------------------//
+//            three-phase overhead line using type 1 overhead conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.OH_3p_type1 nphases= 3 Units= mi    			  ! Configuration name, number of phases, unit
+ ~ Rmatrix= (0.615927 | 0.170927 0.615927 | 0.170927 0.170927 0.615927 )  ! Series resistance matrix
+ ~ Xmatrix= (1.209389 | 0.433188 1.209389 | 0.433188 0.433188 1.209389 )  ! Series reactance matrix
+
+
+//--------------------------------------------------------------------------------------//
+//            two-phase overhead line using type 2 overhead conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.OH_2p_type2 nphases= 2 Units= mi
+ ~ Rmatrix= (0.589255 | 0.169495 0.589255 ) 
+ ~ Xmatrix= (1.074856 | 0.387876 1.074856 )
+
+
+//--------------------------------------------------------------------------------------//
+//            one-phase overhead line using type 2 overhead conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.OH_1p_type2 nphases= 1 Units= mi
+ ~ Rmatrix= (0.592473 ) 
+ ~ Xmatrix= (1.065821 ) 
+
+
+//--------------------------------------------------------------------------------------//
+//           three-phase overhead line using type 5 overhead conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.OH_3p_type5 nphases= 3 Units= mi
+ ~ Rmatrix= (1.191602 | 0.234849 1.191602 | 0.234849 0.234849 1.191602 ) 
+ ~ Xmatrix= (1.209452 | 0.489263 1.209452 | 0.489263 0.489263 1.209452 ) 
+
+
+//--------------------------------------------------------------------------------------//
+//           one-phase overhead line using type 5 overhead conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.OH_1p_type5 nphases= 1 Units= mi
+ ~ Rmatrix= (1.194260 ) 
+ ~ Xmatrix= (1.205420 ) 
+
+
+
+//--------------------------------------------------------------------------------------//
+//           three-phase underground cable using type 1 underground conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.UG_3p_type1 nphases= 3 Units= mi
+ ~ Rmatrix= (1.009423 | 0.409732 1.009423 | 0.409732 0.409732 1.009423 ) 
+ ~ Xmatrix= (0.493164 | 0.100849 0.493164 | 0.100849 0.100849 0.493164 ) 
+ ~ Cmatrix= (286.101593 | 0.000000 286.101593 | 0.000000 0.000000 286.101593 )     ! Shunt nodal capacitance matrix
+
+
+
+//--------------------------------------------------------------------------------------//
+//           three-phase underground cable using type 2 underground conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.UG_3p_type2 nphases= 3 Units= mi
+ ~ Rmatrix= (1.692577 | 0.550087 1.692577 | 0.550087 0.550087 1.692577 ) 
+ ~ Xmatrix= (0.791756 | 0.344931 0.791756 | 0.344931 0.344931 0.791756 ) 
+ ~ Cmatrix= (207.880539 | 0.000000 207.880539 | 0.000000 0.000000 207.880539 )
+
+
+
+//--------------------------------------------------------------------------------------//
+//            one-phase underground cable using type 2 underground conductor
+//--------------------------------------------------------------------------------------//
+New LineCode.UG_1p_type2 nphases= 1 Units= mi
+ ~ Rmatrix= (1.675338 ) 
+ ~ Xmatrix= (1.210007 ) 
+ ~ Cmatrix= (207.880539 )
+
+

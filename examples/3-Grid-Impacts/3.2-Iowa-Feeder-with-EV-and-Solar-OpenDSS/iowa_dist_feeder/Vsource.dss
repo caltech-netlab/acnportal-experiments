@@ -1,0 +1,4 @@
+! This file is to define the parameters of the equivalent voltage source. 
+
+Edit "Vsource.source" Bus1= eq_source_bus.1.2.3 Phases=3 Angle=0.00000 Pu=1.00000 BaseKv=69.00000 R1=4.54263687 X1=10.52743053 R0=7.36552668 X0=24.50463867 
+! Voltage source name, bus, number of phases, voltage angle, set voltage in per unit, line-to-line voltage rating, positive-sequence resistance, positive-sequence reactance, zero-sequence resistance, zero-sequence reactance
