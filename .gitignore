@@ -108,3 +108,5 @@ venv.bak/
 # sim and event caches
 events
 sims
+
+.DS_Store
