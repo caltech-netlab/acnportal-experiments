@@ -30,7 +30,7 @@ To run with docker:
  
 First clone the repository to your local machine: the 
  ```
-git clone https://github.com/zach401/ACN-Sim-Demo
+git clone https://github.com/caltech-netlab/acnportal-experiments
 ```
 
 Navigate to the cloned folder and run
@@ -48,7 +48,7 @@ If you prefer to run locally without docker, we recommend using venv or your fav
  
 First clone the repository to your local machine: the 
 ```
-git clone https://github.com/zach401/ACN-Sim-Demo
+git clone https://github.com/caltech-netlab/acnportal-experiments
 ```
 
 Navigate to the cloned folder, then install the dependencies using 
@@ -79,7 +79,7 @@ LLF considers a simplified single-phase representation of the constraints in  th
 network. In the second, LLF uses the full three-phase system model. In both cases, we 
 evaluate the algorithms using the true three-phase network model.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/1-Infrastructure-Evaluation/1.1-Unbalanced-Three-Phase-Systems/1.1-unbalanced-three-phase-systems.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/1-Infrastructure-Evaluation/1.1-Unbalanced-Three-Phase-Systems/1.1-unbalanced-three-phase-systems.ipynb)
   
 #### 1.2 Comparing Infrastructure Designs
 *How can we use acnportal to evaluate the tradeoffs between level-1 and level-2 and
@@ -102,7 +102,7 @@ operating costs (calculated using ACN-Sim's integration with utility tariffs).
 This demonstrates the significant benefits of developing smart EV charging systems in 
 terms of reducing both capital costs (transformer capacity) and operating costs.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/1-Infrastructure-Evaluation/1.2-Comparing-Infrastructure-Designs/1.2-comparing-infrastructure-designs.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/1-Infrastructure-Evaluation/1.2-Comparing-Infrastructure-Designs/1.2-comparing-infrastructure-designs.ipynb)
 
 
 ### 2. Algorithm Comparison
@@ -118,7 +118,7 @@ algorithm is able to meet. We also consider the current unbalance caused by each
 algorithm to help understand why certain algorithms are able to deliver more or less 
 energy at a given infrastructure capacity.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/examples/2-Algorithm-Comparison/2.1-Comparing-Algorithms-with-Constrained-Infrastructure/2.1-comparing-algorithms-with-constrained-infrastructure.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/examples/2-Algorithm-Comparison/2.1-Comparing-Algorithms-with-Constrained-Infrastructure/2.1-comparing-algorithms-with-constrained-infrastructure.ipynb)
 
 
 ### 3. Grid Impacts
@@ -135,7 +135,7 @@ In a general sense, this tutorial demonstrates how ACN-Sim can be used to evalua
 scheduled charging algorithms in the context of grid-level effects by feeding results 
 from ACN-Sim Simulations into pandapower power flows.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/3-Grid-Impacts/3.1-Simple-Feeder-with-EV-and-Solar-PandaPower/3.1-simple-feeder-with-ev-and-solar-pandapower.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/3-Grid-Impacts/3.1-Simple-Feeder-with-EV-and-Solar-PandaPower/3.1-simple-feeder-with-ev-and-solar-pandapower.ipynb)
 
 
 ## Papers
