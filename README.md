@@ -168,13 +168,13 @@ The examples in this repository have been used as the basis for several academic
  them to use new interfaces or best practices as they are developed. 
 
 ### ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research
-*IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm),
-Beijing, China, October 2019*
+*IEEE International Conference on Communications, Control, and Computing Technologies
+for Smart Grids (SmartGridComm), Beijing, China, October 2019*
 
 Z. Lee, D. Johansson, S. H. Low. 
 [ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research](https://ev.caltech.edu/assets/pub/ACN_Sim_Open_Source_Simulator.pdf), 
-Proc. of the IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm),
-Beijing, China, October 2019
+Proc. of the IEEE International Conference on Communications, Control, and Computing
+Technologies for Smart Grids (SmartGridComm), Beijing, China, October 2019
 
 Relevant Experiments:
 
