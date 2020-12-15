@@ -200,8 +200,9 @@ class ACNExperiment:
                 ),
                 ObjectiveComponent(quick_charge, 1e-3),
             ]
+            # TODO: Solver should be MOSEK if the user has it installed.
             return AdaptiveSchedulingAlgorithm(
-                objective, solver="MOSEK", max_recompute=1, peak_limit=peak_limit
+                objective, solver="ECOS", max_recompute=1, peak_limit=peak_limit
             )
 
     def build(self):
