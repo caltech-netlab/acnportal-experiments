@@ -55,10 +55,12 @@ class ACNExperiment:
         bus_transformer_cap=225,
         events_dir="events",
         sim_dir="sims",
+        sim_timezone="America/Los_Angeles"
     ):
+        self.timezone = pytz.timezone(sim_timezone)
+        self.start = self.timezone.localize(start)
+        self.end = self.timezone.localize(end)
         self.site = site
-        self.start = start
-        self.end = end
         self.period = 5
         self.voltage = 208
         self.default_battery_power = 6.656
@@ -187,7 +189,7 @@ class ACNExperiment:
             return AdaptiveSchedulingAlgorithm(
                 objective, solver="MOSEK", max_recompute=1
             )
-        elif self.alg_name == "load_flattening":
+        elif "load_flattening" in self.alg_name:
             peak_limit = (
                 (self.bus_transformer_capacity - self.external_load) * 1000 / 208
             )
@@ -200,10 +202,14 @@ class ACNExperiment:
                 ),
                 ObjectiveComponent(quick_charge, 1e-3),
             ]
-            # TODO: Solver should be MOSEK if the user has it installed.
-            return AdaptiveSchedulingAlgorithm(
-                objective, solver="ECOS", max_recompute=1, peak_limit=peak_limit
-            )
+            if "ECOS" in self.alg_name:
+                return AdaptiveSchedulingAlgorithm(
+                    objective, solver="ECOS", max_recompute=1, peak_limit=peak_limit
+                )
+            else:
+                return AdaptiveSchedulingAlgorithm(
+                    objective, solver="MOSEK", max_recompute=1, peak_limit=peak_limit
+                )
 
     def build(self):
         """ Build experiment from configuration. """
