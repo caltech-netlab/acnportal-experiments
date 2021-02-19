@@ -118,7 +118,7 @@ algorithm is able to meet. We also consider the current unbalance caused by each
 algorithm to help understand why certain algorithms are able to deliver more or less 
 energy at a given infrastructure capacity.
 
-[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/examples/2-Algorithm-Comparison/2.1-Comparing-Algorithms-with-Constrained-Infrastructure/2.1-comparing-algorithms-with-constrained-infrastructure.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/2-Algorithm-Comparison/2.1-Comparing-Algorithms-with-Constrained-Infrastructure/2.1-comparing-algorithms-with-constrained-infrastructure.ipynb)
 
 
 ### 3. Grid Impacts
