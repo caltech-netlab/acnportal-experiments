@@ -132,8 +132,7 @@ granularity in the EVSE pilot signal and non-ideal battery behavior. We compare
 these algorithms based on energy delivery in constrained infrastructure (similar to 
 experiment 2.1) and profit maximization.
 
-[Colab Link](https://colab.research.google.
-com/github/caltech-netlab/acnportal-experiments/blob/master/examples/2-Algorithm-Comparison/2.2-Evaluating-Impact-Of-Practical-Models /2.2-Evaluating-Impact-Of-Practical-Models.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/2-Algorithm-Comparison/2.2-Evaluating-Impact-Of-Practical-Models /2.2-Evaluating-Impact-Of-Practical-Models.ipynb)
 
 
 
