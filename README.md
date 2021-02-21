@@ -176,6 +176,9 @@ Relevant Experiments:
 
 [2.1 Comparing Algorithms with Constrained Infrastructure](#21-comparing-algorithms-with-constrained-infrastructure)
 
+### Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging
+*arXiv*
+
 Z. Lee, G. Lee, T. Lee, C. Jin, R. Lee, Z. Low, D. Chang, C. Ortega, S. H. Low
 [Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging](https://arxiv.org/abs/2012.02636),
 [arXiv preprint]. 
