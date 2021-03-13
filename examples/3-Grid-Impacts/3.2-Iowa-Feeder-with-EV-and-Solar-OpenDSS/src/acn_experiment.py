@@ -210,6 +210,47 @@ class ACNExperiment:
                 return AdaptiveSchedulingAlgorithm(
                     objective, solver="MOSEK", max_recompute=1, peak_limit=peak_limit
                 )
+        elif "load_flattening_no_qc" in self.alg_name:
+            peak_limit = (
+                (self.bus_transformer_capacity - self.external_load) * 1000 / 208
+            )
+            objective = [
+                ObjectiveComponent(total_energy, 100),
+                ObjectiveComponent(
+                    load_flattening,
+                    1,
+                    {"external_signal": self.external_load, "scaling_factor": 100},
+                ),
+            ]
+            if "ECOS" in self.alg_name:
+                return AdaptiveSchedulingAlgorithm(
+                    objective, solver="ECOS", max_recompute=1, peak_limit=peak_limit
+                )
+            else:
+                return AdaptiveSchedulingAlgorithm(
+                    objective, solver="MOSEK", max_recompute=1, peak_limit=peak_limit
+                )
+        elif "load_flattening_es" in self.alg_name:
+            peak_limit = (
+                (self.bus_transformer_capacity - self.external_load) * 1000 / 208
+            )
+            objective = [
+                ObjectiveComponent(total_energy, 100),
+                ObjectiveComponent(
+                    load_flattening,
+                    1,
+                    {"external_signal": self.external_load, "scaling_factor": 100},
+                ),
+                ObjectiveComponent(equal_share, 1e-3),
+            ]
+            if "ECOS" in self.alg_name:
+                return AdaptiveSchedulingAlgorithm(
+                    objective, solver="ECOS", max_recompute=1, peak_limit=peak_limit
+                )
+            else:
+                return AdaptiveSchedulingAlgorithm(
+                    objective, solver="MOSEK", max_recompute=1, peak_limit=peak_limit
+                )
 
     def build(self):
         """ Build experiment from configuration. """
