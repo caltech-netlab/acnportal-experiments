@@ -74,14 +74,13 @@ You can then click the link in your terminal to open Jupyter lab.
 Currently, most charging algorithms in the literature rely on constraints which assume 
 single-phase or balanced three-phase operation. In this experiment, we demonstrate why 
 these assumptions are insufficient for practical charging systems. 
-#### TODO: Which MPC alg?
-For this experiment we use the LLF and MPC algorithms. We consider two cases for each 
-algorithm. In the first, the algorithms consider a simplified single-phase 
-representation of the constraints in  the network. In the second, the algorithms use
-the full three-phase system model. In both cases, we evaluate the algorithms using the
-true three-phase network model.
-#### TODO: Change these links to reflect new repo name.
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/1-Infrastructure-Evaluation/1.1-Unbalanced-Three-Phase-Systems/1.1-unbalanced-three-phase-systems.ipynb)
+
+For this experiment we use the LLF algorithm. We consider two cases. In the first,
+LLF considers a simplified single-phase representation of the constraints in  the
+network. In the second, LLF uses the full three-phase system model. In both cases, we 
+evaluate the algorithms using the true three-phase network model.
+
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/1-Infrastructure-Evaluation/1.1-Unbalanced-Three-Phase-Systems/1.1-unbalanced-three-phase-systems.ipynb)
   
 #### 1.2 Comparing Infrastructure Designs
 *How can we use acnportal to evaluate the tradeoffs between level-1 and level-2 and
@@ -105,7 +104,7 @@ This case study demonstrates the significant benefits of developing smart EV cha
 systems in terms of reducing both capital costs (transformer capacity) and operating
 costs.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/1-Infrastructure-Evaluation/1.2-Comparing-Infrastructure-Designs/1.2-comparing-infrastructure-designs.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/1-Infrastructure-Evaluation/1.2-Comparing-Infrastructure-Designs/1.2-comparing-infrastructure-designs.ipynb)
 
 
 ### 2. Algorithm Comparison
@@ -113,15 +112,30 @@ costs.
 *How can we compare different scheduling algorithms?*
 #### TODO: Add MPC QC, CM to algorithm list, here and in notebook
 In this experiment we compare the performance of the Round Robin, 
-First-Come First-Served, Earliest Deadline First, and 
-Least Laxity First algorithms. To understand how these algorithms 
-cope with constrained infrastructure, we limit the capacity of the transformer
-feeding the charging network. We then compare what percentage of energy demands each
+First-Come First-Served, Earliest Deadline First, 
+Least Laxity First algorithms, and Model Predictive Control. To understand how these 
+algorithms cope with constrained infrastructure, we limit the capacity of the transformer
+feeding the charging network and compare single-phase and unbalanced three-phase 
+systems. We evaluate based what percentage of energy demands each
 algorithm is able to meet. We also consider the current unbalance caused by each 
 algorithm to help understand why certain algorithms are able to deliver more or less 
 energy at a given infrastructure capacity.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/examples/2-Algorithm-Comparison/2.1-Comparing-Algorithms-with-Constrained-Infrastructure/2.1-comparing-algorithms-with-constrained-infrastructure.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/2-Algorithm-Comparison/2.1-Comparing-Algorithms-with-Constrained-Infrastructure/2.1-comparing-algorithms-with-constrained-infrastructure.ipynb)
+
+#### 2.2 Evaluating Impact of Practical Models
+*How do practical considerations like non-ideal batteries and control signal 
+quantization effect algorithms?*
+
+In this experiment we compare the performance of Uncontrolled Charging, Round Robin, 
+Earliest Deadline First, Least Laxity First, and Model Predictive Control when 
+considering non-ideal models. We consider control signal quantization caused by limited
+granularity in the EVSE pilot signal and non-ideal battery behavior. We compare 
+these algorithms based on energy delivery in constrained infrastructure (similar to 
+experiment 2.1) and profit maximization.
+
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/2-Algorithm-Comparison/2.2-Evaluating-Impact-Of-Practical-Models/2.2-Evaluating-Impact-Of-Practical-Models.ipynb)
+
 
 
 ### 3. Grid Impacts
@@ -138,7 +152,7 @@ In a general sense, this tutorial demonstrates how ACN-Sim can be used to evalua
 scheduled charging algorithms in the context of grid-level effects by feeding results 
 from ACN-Sim Simulations into pandapower power flows.
 
-[Colab Link](https://colab.research.google.com/github/zach401/ACN-Sim-Demo/blob/master/examples/3-Grid-Impacts/3.1-Simple-Feeder-with-EV-and-Solar-PandaPower/3.1-simple-feeder-with-ev-and-solar-pandapower.ipynb)
+[Colab Link](https://colab.research.google.com/github/caltech-netlab/acnportal-experiments/blob/master/examples/3-Grid-Impacts/3.1-Simple-Feeder-with-EV-and-Solar-PandaPower/3.1-simple-feeder-with-ev-and-solar-pandapower.ipynb)
 
 #### 3.2 Iowa Feeder with EV and Solar (OpenDSS)
 *What effects will a large-scale charging system have on a real distribution system?*
@@ -166,6 +180,33 @@ The examples in this repository have been used as the basis for several academic
  this code would not need to change over time, the ACN Research Portal is under
  constant development. To make these examples relevant over time, we may update
  them to use new interfaces or best practices as they are developed. 
+
+### ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research
+*arXiv*
+
+Z. Lee, S. Sharma, D. Johansson, S. H. Low. 
+[ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research](https://arxiv.org/abs/2012.02809),
+[arXiv preprint]. 
+
+Relevant Experiments:
+
+[1.1 Unbalanced Three Phase Systems](#11-unbalanced-three-phase-systems)
+
+[1.2 Comparing Infrastructure Designs](#1.2-comparing-infrastructure-designs)
+
+[2.1 Comparing Algorithms with Constrained Infrastructure](#21-comparing-algorithms-with-constrained-infrastructure)
+
+### Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging
+*arXiv*
+
+Z. Lee, G. Lee, T. Lee, C. Jin, R. Lee, Z. Low, D. Chang, C. Ortega, S. H. Low
+[Adaptive Charging Networks: A Framework for Smart Electric Vehicle Charging](https://arxiv.org/abs/2012.02636),
+[arXiv preprint]. 
+
+Relevant Experiments:
+
+[2.2 Evaluating Impact of Practical Models](#22-evaluating-impact-of-practical-models)
+
 
 ### ACN-Sim: An Open-Source Simulator for Data-Driven Electric Vehicle Charging Research
 *IEEE International Conference on Communications, Control, and Computing Technologies
