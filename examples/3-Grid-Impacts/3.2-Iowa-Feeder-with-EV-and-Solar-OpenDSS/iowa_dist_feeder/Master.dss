@@ -1,0 +1,62 @@
+// This is the OpenDSS Master file to solve the test system snapshot power flow. 
+
+Clear
+new circuit.240_node_test_system        ! Initiate a new circuit called "240_node_test_system"
+
+!--------------------------------------------------------!
+Redirect Vsource.dss                    ! Source definition
+Redirect SubTransformer.dss             ! Substation transformer definition
+! Redirect RegControl.dss			! Tap changer control definition
+Redirect DistriTransformer.dss          ! Secondary distribution transformer definition
+Redirect Linecode.dss			! Line configuration
+Redirect Line.dss			! Line segement definition
+Redirect CircuitBreaker.dss	        ! Circuit breaker definition
+Redirect Load.dss			! Load definition
+Redirect Capacitor.dss			! Shunt capacitor bank definition
+
+New EnergyMeter.Feeder Line.L_2001_2002 1
+Update Load.Load_2002 kW=350
+Update Load.Load_2040 kW=350
+Update Load.Load_2052 kW=350
+Update Load.Load_2053 kW=350
+Update Load.Load_2058 kW=350
+
+
+!--------------------------Calculate---------------------!
+Set VoltageBases = "69.0, 13.8, 0.208"	! Set base voltage as 69 kV, 13.8 kV, 0.208 kV
+CalcVoltageBases			! Estimate the voltage base for each bus 
+!solve					! Solve the circuit
+
+BusCoords       Buscoords.dss
+
+!-------------Show Snapshot Power Flow Result------------!
+!Show Voltage LN Nodes
+!Show currents
+!Show power kva element
+!Show convergence
+!Show isolated
+!Show kvbasemismatch
+!Show losses
+!Show overloads
+!Show topology
+
+
+
+!----------------- Plotting -----------------------!
+
+!Set markCapacitors=yes  CapMarkersize=3
+!Set markRegulators=yes  RegMarkersize=5
+!Interpolate
+!Plot Circuit Power Max=500 dots=n labels=n  C1=Blue  1ph=3   ! $00FF0000
+!Plot Circuit voltage Max=0 dots=n n  C1=Blue C2=$FF00FF  1ph=3
+!plot circuit Losses Max=1 dots=n labels=n subs=y C1=Blue
+
+Plot Profile
+
+
+
+
+
+
+
+

@@ -105,4 +105,8 @@ venv.bak/
 
 .idea/
 
+# sim and event caches
+events
+sims
+
 .DS_Store

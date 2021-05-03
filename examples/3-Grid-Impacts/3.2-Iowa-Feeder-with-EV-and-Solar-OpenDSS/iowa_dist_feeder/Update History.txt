@@ -1,0 +1,4 @@
+06/17/2019: Released the first version of the 240-bus time-series test system.
+10/16/2019: Changed the total number of LTC tap positions from 16 to 32.
+02/17/2020: Added the Buscoords.dss file to the OpenDSS model.
+08/13/2020: Updated the impedances of all distribution service transformers in the system description and OpenDSS model.

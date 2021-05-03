@@ -1,0 +1,7 @@
+//This file is to define the parameters of tap changer control for substation transformer.
+
+New RegControl.Reg_contr_A Transformer=sub_regulator_A bus=bus1.1 Winding=2 vReg=123.00000 R=0.00000 X=0.00000 Band=2  PTratio=66.395279 vLimit=129.00000  
+New RegControl.Reg_contr_B Transformer=sub_regulator_B bus=bus1.2 Winding=2 vReg=123.00000 R=0.00000 X=0.00000 Band=2  PTratio=66.395279 vLimit=129.00000   
+New RegControl.Reg_contr_C Transformer=sub_regulator_C bus=bus1.3 Winding=2 vReg=123.00000 R=0.00000 X=0.00000 Band=2  PTratio=66.395279 vLimit=129.00000  
+! Tap changer control name, name of tap changer to be controlled, name of controlled bus, number of windings, voltage setting, R setting on the line drop compensator, X setting on the line drop compensator, voltage bandwdith, PT ratio, voltage limit 
+

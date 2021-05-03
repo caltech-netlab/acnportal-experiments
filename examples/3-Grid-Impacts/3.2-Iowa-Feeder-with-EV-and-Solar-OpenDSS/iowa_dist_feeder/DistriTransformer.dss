@@ -1,0 +1,2118 @@
+// This file is to define the parameters of secondary distribution transformers, including the three-phase transformers and single-phase center-tapped transformers.
+
+//***************************************************************************************//
+//                                             Feeder A
+//***************************************************************************************//
+//---------------------------------------------------------//  
+//      	     Transformer at bus 1003
+//---------------------------------------------------------//
+
+New Transformer.T_1003 Phases=3 Windings=2 XHL=3.87                        ! Three-phase transformer name, number of phases, number of windings, percent reactance high-to-low
+~ wdg=1 bus=bus1003.1.2.3.0     conn=wye kV=13.8  kva=112.5 %R=1.215       ! Winding number, bus, connection, voltage rating, kVA rating, percent resistance
+~ wdg=2 bus=T_bus1003_L.1.2.3.0 conn=wye kV=0.208 kva=112.5 %R=1.215
+
+//---------------------------------------------------------//
+//      	     Transformer at bus 1004
+//---------------------------------------------------------//
+
+New Transformer.T_1004 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus1004.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus1004_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+//---------------------------------------------------------//
+//      	     Transformer at bus 1005
+//---------------------------------------------------------//
+
+New Transformer.T_1005 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus1005.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus1005_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+//---------------------------------------------------------// ---------AB
+//      	     Transformer at bus 1006
+//---------------------------------------------------------//
+! A single-phase transformer, its voltage rating equals the line-to-line nominal voltage.
+New Transformer.T_1006 Phases=2 Windings=2 XHL=2.1
+~ wdg=1 bus=bus1006.1.2     conn=delta kV=13.8  kva=75 %R=0.5
+~ wdg=2 bus=T_bus1006_L.1.2 conn=delta kV=0.208 kva=75 %R=0.5
+
+
+//---------------------------------------------------------// ---------AB
+//      	     Transformer at bus 1007
+//---------------------------------------------------------//
+
+New Transformer.T_1007 Phases=2 Windings=2 XHL=1.88
+~ wdg=1 bus=bus1007.1.2     conn=delta kV=13.8  kva=25 %R=0.665
+~ wdg=2 bus=T_bus1007_L.1.2 conn=delta kV=0.208 kva=25 %R=0.665
+
+
+//---------------------------------------------------------//
+//      	     Transformer at bus 1008
+//---------------------------------------------------------//
+
+New Transformer.T_1008 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus1008.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus1008_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//
+//      	     Transformer at bus 1009
+//---------------------------------------------------------//
+
+New Transformer.T_1009 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus1009.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus1009_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+//---------------------------------------------------------//
+//      	     Transformer at bus 1010
+//---------------------------------------------------------//
+
+New Transformer.T_1010 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus1010.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus1010_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 1011
+//---------------------------------------------------------//
+
+New Transformer.T_1011 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504  
+! Single-phase center-tapped transformer name, number of phses, number of windings, percent reactance high-to-low, percent reactance high-to-tertiary, percent reactance low-to-tertiary
+~ wdg=1 bus=bus1011.1.0     conn=wye kV=7.9677    kva=25 %R=0.665  ! Winding number, bus, connection, kV rating, kVA rating, percent resistance
+~ wdg=2 bus=T_bus1011_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus1011_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 1012
+//---------------------------------------------------------//
+
+New Transformer.T_1012 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384 
+~ wdg=1 bus=bus1012.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus1012_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus1012_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//
+//      	     Transformer at bus 1013
+//---------------------------------------------------------//
+
+New Transformer.T_1013 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus1013.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus1013_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 1014
+//---------------------------------------------------------//
+
+New Transformer.T_1014 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504 
+~ wdg=1 bus=bus1014.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus1014_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus1014_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 1015
+//---------------------------------------------------------//
+
+New Transformer.T_1015 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504 
+~ wdg=1 bus=bus1015.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus1015_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus1015_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  -------------C
+//      	     Transformer at bus 1016
+//---------------------------------------------------------//
+
+New Transformer.T_1016 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus1016.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus1016_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus1016_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 1017
+//---------------------------------------------------------//
+
+New Transformer.T_1017 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus1017.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus1017_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus1017_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+
+
+//***************************************************************************************//
+//                                             Feeder B
+//***************************************************************************************//
+//---------------------------------------------------------// 
+//      	     Transformer at bus 2002
+//---------------------------------------------------------//
+
+New Transformer.T_2002 Phases=3 Windings=2 XHL=4.5
+~ wdg=1 bus=bus2002.1.2.3     conn=wye   kV=13.8   kva=300 %R=0.9
+~ wdg=2 bus=T_bus2002_L.1.2.3 conn=wye   kV=0.208  kva=300 %R=0.9
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2003
+//---------------------------------------------------------//
+
+New Transformer.T_2003 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus2003.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus2003_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2005
+//---------------------------------------------------------//
+
+New Transformer.T_2005 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2005.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2005_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2008
+//---------------------------------------------------------//
+
+New Transformer.T_2008 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2008.1.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2008_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2008_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2009
+//---------------------------------------------------------//
+
+New Transformer.T_2009 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2009.1.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2009_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2009_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2010
+//---------------------------------------------------------//
+
+New Transformer.T_2010 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2010.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2010_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2011
+//---------------------------------------------------------//
+
+New Transformer.T_2011 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2011.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2011_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2014
+//---------------------------------------------------------//
+
+New Transformer.T_2014 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus2014.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus2014_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus2014_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2015
+//---------------------------------------------------------//
+
+New Transformer.T_2015 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2015.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2015_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2015_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2016
+//---------------------------------------------------------//
+
+
+New Transformer.T_2016 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2016.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2016_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2016_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2017
+//---------------------------------------------------------//
+
+New Transformer.T_2017 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2017.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2017_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2017_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2018
+//---------------------------------------------------------//
+
+New Transformer.T_2018 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2018.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2018_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2018_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2020
+//---------------------------------------------------------//
+
+New Transformer.T_2020 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2020.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2020_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2020_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 2022
+//---------------------------------------------------------//
+
+New Transformer.T_2022 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2022.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2022_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2022_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 2023
+//---------------------------------------------------------//
+
+New Transformer.T_2023 Phases=1 Windings=3 XHL=1.536  XHT=1.536  XLT=1.024
+~ wdg=1 bus=bus2023.3.0     conn=wye kV=7.9677    kva=15 %R=0.83
+~ wdg=2 bus=T_bus2023_L.1.0 conn=wye kV=0.120     kva=15 %R=1.66
+~ wdg=3 bus=T_bus2023_L.0.2 conn=wye kV=0.120     kva=15 %R=1.66
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 2024
+//---------------------------------------------------------//
+
+New Transformer.T_2024 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2024.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2024_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2024_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 2025
+//---------------------------------------------------------//
+
+New Transformer.T_2025 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2025.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2025_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2025_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2028
+//---------------------------------------------------------//
+
+New Transformer.T_2028 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2028.1.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2028_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2028_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2029
+//---------------------------------------------------------//
+
+New Transformer.T_2029 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus2029.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus2029_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2030
+//---------------------------------------------------------//
+
+New Transformer.T_2030 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus2030.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus2030_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2031
+//---------------------------------------------------------//
+
+New Transformer.T_2031 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2031.1.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2031_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2031_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2032
+//---------------------------------------------------------//
+
+New Transformer.T_2032 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2032.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2032_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2034
+//---------------------------------------------------------//
+
+New Transformer.T_2034 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2034.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2034_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2035
+//---------------------------------------------------------//
+
+New Transformer.T_2035 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus2035.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus2035_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2037
+//---------------------------------------------------------//
+
+New Transformer.T_2037 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2037.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2037_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2040
+//---------------------------------------------------------//
+
+New Transformer.T_2040 Phases=3 Windings=2 XHL=4.5
+~ wdg=1 bus=bus2040.1.2.3.0     conn=wye kV=13.8  kva=300 %R=0.9
+~ wdg=2 bus=T_bus2040_L.1.2.3.0 conn=wye kV=0.208 kva=300 %R=0.9
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2041
+//---------------------------------------------------------//
+
+New Transformer.T_2041 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus2041.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus2041_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2042
+//---------------------------------------------------------//
+
+New Transformer.T_2042 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus2042.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus2042_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2043
+//---------------------------------------------------------//
+
+New Transformer.T_2043 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus2043.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus2043_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2045
+//---------------------------------------------------------//
+
+New Transformer.T_2045 Phases=1 Windings=3 XHL=1.536  XHT=1.536  XLT=1.024
+~ wdg=1 bus=bus2045.2.0     conn=wye kV=7.9677    kva=15 %R=0.83
+~ wdg=2 bus=T_bus2045_L.1.0 conn=wye kV=0.120     kva=15 %R=1.66
+~ wdg=3 bus=T_bus2045_L.0.2 conn=wye kV=0.120     kva=15 %R=1.66
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2046
+//---------------------------------------------------------//
+
+New Transformer.T_2046 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus2046.2.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus2046_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus2046_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2047
+//---------------------------------------------------------//
+
+New Transformer.T_2047 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus2047.2.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus2047_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus2047_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2048
+//---------------------------------------------------------//
+
+New Transformer.T_2048 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus2048.2.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus2048_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus2048_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 2049
+//---------------------------------------------------------//
+
+New Transformer.T_2049 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus2049.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus2049_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus2049_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 2050
+//---------------------------------------------------------//
+
+New Transformer.T_2050 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus2050.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus2050_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus2050_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer bus 2051
+//---------------------------------------------------------//
+
+New Transformer.T_2051 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus2051.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus2051_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus2051_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2052
+//---------------------------------------------------------//
+
+New Transformer.T_2052 Phases=3 Windings=2 XHL=4.65
+~ wdg=1 bus=bus2052.1.2.3.0     conn=wye kV=13.8  kva=225 %R=1.1
+~ wdg=2 bus=T_bus2052_L.1.2.3.0 conn=wye kV=0.208 kva=225 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2053
+//---------------------------------------------------------//
+
+New Transformer.T_2053 Phases=3 Windings=2 XHL=4.65
+~ wdg=1 bus=bus2053.1.2.3.0     conn=wye kV=13.8  kva=225 %R=1.1
+~ wdg=2 bus=T_bus2053_L.1.2.3.0 conn=wye kV=0.208 kva=225 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2054
+//---------------------------------------------------------//
+
+New Transformer.T_2054 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus2054.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus2054_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus2054_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2055
+//---------------------------------------------------------//
+
+New Transformer.T_2055 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus2055.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus2055_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus2055_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 2056
+//---------------------------------------------------------//
+
+New Transformer.T_2056 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2056.1.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2056_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2056_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 2058
+//---------------------------------------------------------//
+
+New Transformer.T_2058 Phases=3 Windings=2 XHL=4.5
+~ wdg=1 bus=bus2058.1.2.3.0     conn=wye kV=13.8  kva=300 %R=0.9
+~ wdg=2 bus=T_bus2058_L.1.2.3.0 conn=wye kV=0.208 kva=300 %R=0.9
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2059
+//---------------------------------------------------------//
+
+New Transformer.T_2059 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2059.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2059_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2059_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 2060
+//---------------------------------------------------------//
+
+New Transformer.T_2060 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus2060.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus2060_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus2060_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+
+
+
+
+
+//***************************************************************************************//
+//                                             Feeder C
+//***************************************************************************************//
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3002
+//---------------------------------------------------------//
+
+New Transformer.T_3002 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3002.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3002_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3004
+//---------------------------------------------------------//
+
+New Transformer.T_3004 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3004.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3004_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3006
+//---------------------------------------------------------//
+
+New Transformer.T_3006 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3006.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3006_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3007
+//---------------------------------------------------------//
+
+New Transformer.T_3007 Phases=3 Windings=2 XHL=1.91
+~ wdg=1 bus=bus3007.1.2.3.0     conn=wye kV=13.8  kva=75 %R=1.135
+~ wdg=2 bus=T_bus3007_L.1.2.3.0 conn=wye kV=0.208 kva=75 %R=1.135
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3009
+//---------------------------------------------------------//
+
+New Transformer.T_3009 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3009.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3009_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3009_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3010
+//---------------------------------------------------------//
+
+New Transformer.T_3010 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3010.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3010_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3010_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3011
+//---------------------------------------------------------//
+
+New Transformer.T_3011 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3011.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3011_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3011_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3012
+//---------------------------------------------------------//
+
+New Transformer.T_3012 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3012.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3012_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3012_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3013
+//---------------------------------------------------------//
+
+New Transformer.T_3013 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3013.2.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3013_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3013_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3014
+//---------------------------------------------------------//
+
+New Transformer.T_3014 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3014.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3014_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3014_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3016
+//---------------------------------------------------------//
+
+New Transformer.T_3016 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3016.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3016_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3016_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3017
+//---------------------------------------------------------//
+
+New Transformer.T_3017 Phases=1 Windings=3 XHL=2.688  XHT=2.688  XLT=1.792
+~ wdg=1 bus=bus3017.2.0     conn=wye kV=7.9677    kva=100 %R=0.56
+~ wdg=2 bus=T_bus3017_L.1.0 conn=wye kV=0.120     kva=100 %R=1.12
+~ wdg=3 bus=T_bus3017_L.0.2 conn=wye kV=0.120     kva=100 %R=1.12
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3018
+//---------------------------------------------------------//
+
+New Transformer.T_3018 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3018.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3018_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3018_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3019
+//---------------------------------------------------------//
+
+New Transformer.T_3019 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3019.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3019_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3019_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3020
+//---------------------------------------------------------//
+
+New Transformer.T_3020 Phases=1 Windings=3 XHL=2.688  XHT=2.688  XLT=1.792
+~ wdg=1 bus=bus3020.3.0     conn=wye kV=7.9677    kva=100 %R=0.56
+~ wdg=2 bus=T_bus3020_L.1.0 conn=wye kV=0.120     kva=100 %R=1.12
+~ wdg=3 bus=T_bus3020_L.0.2 conn=wye kV=0.120     kva=100 %R=1.12
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3021
+//---------------------------------------------------------//
+
+New Transformer.T_3021 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3021.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3021_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3021_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3023
+//---------------------------------------------------------//
+
+New Transformer.T_3023 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3023.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3023_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3023_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3024
+//---------------------------------------------------------//
+
+New Transformer.T_3024 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3024.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3024_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3024_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3025
+//---------------------------------------------------------//
+
+New Transformer.T_3025 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3025.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3025_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3025_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3026
+//---------------------------------------------------------//
+
+New Transformer.T_3026 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3026.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3026_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3026_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3027
+//---------------------------------------------------------//
+
+New Transformer.T_3027 Phases=1 Windings=3 XHL=2.688 XHT=2.688  XLT=1.792
+~ wdg=1 bus=bus3027.1.0     conn=wye kV=7.9677    kva=100 %R=0.56
+~ wdg=2 bus=T_bus3027_L.1.0 conn=wye kV=0.120     kva=100 %R=1.12
+~ wdg=3 bus=T_bus3027_L.0.2 conn=wye kV=0.120     kva=100 %R=1.12
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3028
+//---------------------------------------------------------//
+
+New Transformer.T_3028 Phases=1 Windings=3 XHL=2.688  XHT=2.688  XLT=1.792
+~ wdg=1 bus=bus3028.1.0     conn=wye kV=7.9677    kva=100 %R=0.56
+~ wdg=2 bus=T_bus3028_L.1.0 conn=wye kV=0.120     kva=100 %R=1.12
+~ wdg=3 bus=T_bus3028_L.0.2 conn=wye kV=0.120     kva=100 %R=1.12
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3029
+//---------------------------------------------------------//
+
+New Transformer.T_3029 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3029.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3029_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3029_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3031
+//---------------------------------------------------------//
+
+New Transformer.T_3031 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3031.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3031_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3032
+//---------------------------------------------------------//
+
+New Transformer.T_3032 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3032.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3032_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3033
+//---------------------------------------------------------//
+
+New Transformer.T_3033 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3033.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3033_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3034
+//---------------------------------------------------------//
+
+New Transformer.T_3034 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3034.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3034_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3035
+//---------------------------------------------------------//
+
+New Transformer.T_3035 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3035.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3035_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3036
+//---------------------------------------------------------//
+
+New Transformer.T_3036 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3036.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3036_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3037
+//---------------------------------------------------------//
+
+New Transformer.T_3037 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3037.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3037_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3038
+//---------------------------------------------------------//
+
+New Transformer.T_3038 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3038.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3038_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3039
+//---------------------------------------------------------//
+
+New Transformer.T_3039 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3039.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3039_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3041
+//---------------------------------------------------------//
+
+New Transformer.T_3041 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3041.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3041_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3041_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3042
+//---------------------------------------------------------//
+
+New Transformer.T_3042 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3042.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3042_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3042_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3043
+//---------------------------------------------------------//
+
+New Transformer.T_3043 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3043.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3043_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3043_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3044
+//---------------------------------------------------------//
+
+New Transformer.T_3044 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3044.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3044_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3044_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3045
+//---------------------------------------------------------//
+
+New Transformer.T_3045 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3045.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3045_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3045_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3047
+//---------------------------------------------------------//
+
+New Transformer.T_3047 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3047.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3047_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3048
+//---------------------------------------------------------//
+
+New Transformer.T_3048 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3048.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3048_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3049
+//---------------------------------------------------------//
+
+New Transformer.T_3049 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3049.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3049_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3050
+//---------------------------------------------------------//
+
+New Transformer.T_3050 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3050.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3050_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3051
+//---------------------------------------------------------//
+
+New Transformer.T_3051 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3051.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3051_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3052
+//---------------------------------------------------------//
+
+New Transformer.T_3052 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3052.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3052_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3054
+//---------------------------------------------------------//
+
+New Transformer.T_3054 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3054.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3054_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3056
+//---------------------------------------------------------//
+
+New Transformer.T_3056 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3056.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3056_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3056_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3057
+//---------------------------------------------------------//
+
+New Transformer.T_3057 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3057.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3057_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3057_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3058
+//---------------------------------------------------------//
+
+New Transformer.T_3058 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3058.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3058_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3058_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3059
+//---------------------------------------------------------//
+
+New Transformer.T_3059 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3059.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3059_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3059_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3060
+//---------------------------------------------------------//
+
+New Transformer.T_3060 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3060.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3060_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3060_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3061
+//---------------------------------------------------------//
+
+New Transformer.T_3061 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3061.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3061_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3061_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3062
+//---------------------------------------------------------//
+
+New Transformer.T_3062 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3062.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3062_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3062_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3063
+//---------------------------------------------------------//
+
+New Transformer.T_3063 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3063.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3063_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3063_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3064
+//---------------------------------------------------------//
+
+New Transformer.T_3064 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3064.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3064_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3064_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3065
+//---------------------------------------------------------//
+
+New Transformer.T_3065 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3065.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3065_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3065_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3066
+//---------------------------------------------------------//
+
+New Transformer.T_3066 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3066.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3066_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3066_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3067
+//---------------------------------------------------------//
+
+New Transformer.T_3067 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3067.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3067_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3067_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3070
+//---------------------------------------------------------//
+
+New Transformer.T_3070 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3070.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3070_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3071
+//---------------------------------------------------------//
+
+New Transformer.T_3071 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3071.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3071_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3072
+//---------------------------------------------------------//
+
+New Transformer.T_3072 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3072.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3072_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3073
+//---------------------------------------------------------//
+
+New Transformer.T_3073 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3073.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3073_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3074
+//---------------------------------------------------------//
+
+New Transformer.T_3074 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3074.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3074_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3077
+//---------------------------------------------------------//
+
+New Transformer.T_3077 Phases=3 Windings=2 XHL=5.9
+~ wdg=1 bus=bus3077.1.2.3.0     conn=wye kV=13.8  kva=500 %R=0.8
+~ wdg=2 bus=T_bus3077_L.1.2.3.0 conn=wye kV=0.208 kva=500 %R=0.8
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3078
+//---------------------------------------------------------//
+
+New Transformer.T_3078 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3078.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3078_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  
+//      	     Transformer at bus 3081
+//---------------------------------------------------------//
+
+New Transformer.T_3081 Phases=3 Windings=2 XHL=1.73
+~ wdg=1 bus=bus3081.1.2.3.0     conn=wye kV=13.8  kva=45 %R=1.26
+~ wdg=2 bus=T_bus3081_L.1.2.3.0 conn=wye kV=0.208 kva=45 %R=1.26
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3083
+//---------------------------------------------------------//
+
+New Transformer.T_3083 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3083.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3083_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3083_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3084
+//---------------------------------------------------------//
+
+New Transformer.T_3084 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3084.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3084_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3084_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3085
+//---------------------------------------------------------//
+
+New Transformer.T_3085 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3085.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3085_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3085_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3086
+//---------------------------------------------------------//
+
+New Transformer.T_3086 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3086.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3086_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3086_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3087
+//---------------------------------------------------------//
+
+New Transformer.T_3087 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3087.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3087_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3087_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3088
+//---------------------------------------------------------//
+
+New Transformer.T_3088 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3088.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3088_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3088_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3089
+//---------------------------------------------------------//
+
+New Transformer.T_3089 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3089.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3089_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3089_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3090
+//---------------------------------------------------------//
+
+New Transformer.T_3090 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3090.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3090_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3090_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3091
+//---------------------------------------------------------//
+
+New Transformer.T_3091 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3091.1.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3091_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3091_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3093
+//---------------------------------------------------------//
+
+New Transformer.T_3093 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3093.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3093_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3093_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3094
+//---------------------------------------------------------//
+
+New Transformer.T_3094 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3094.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3094_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3094_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3095
+//---------------------------------------------------------//
+
+New Transformer.T_3095 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3095.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3095_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3095_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3096
+//---------------------------------------------------------//
+
+New Transformer.T_3096 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3096.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3096_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3096_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3097
+//---------------------------------------------------------//
+
+New Transformer.T_3097 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3097.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3097_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3097_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3098
+//---------------------------------------------------------//
+
+New Transformer.T_3098 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3098.2.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3098_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3098_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3099
+//---------------------------------------------------------//
+
+New Transformer.T_3099 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3099.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3099_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3099_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3101
+//---------------------------------------------------------//
+
+New Transformer.T_3101 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3101.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3101_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3101_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3102
+//---------------------------------------------------------//
+
+New Transformer.T_3102 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3102.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3102_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3102_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3103
+//---------------------------------------------------------//
+
+New Transformer.T_3103 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3103.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3103_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3103_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3104
+//---------------------------------------------------------//
+
+New Transformer.T_3104 Phases=1 Windings=3 XHL=2.688  XHT=2.688  XLT=1.792
+~ wdg=1 bus=bus3104.3.0     conn=wye kV=7.9677    kva=100 %R=0.56
+~ wdg=2 bus=T_bus3104_L.1.0 conn=wye kV=0.120     kva=100 %R=1.12
+~ wdg=3 bus=T_bus3104_L.0.2 conn=wye kV=0.120     kva=100 %R=1.12
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3105
+//---------------------------------------------------------//
+
+New Transformer.T_3105 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3105.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3105_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3105_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3106
+//---------------------------------------------------------//
+
+New Transformer.T_3106 Phases=1 Windings=3 XHL=2.688  XHT=2.688  XLT=1.792
+~ wdg=1 bus=bus3106.3.0     conn=wye kV=7.9677    kva=100 %R=0.56
+~ wdg=2 bus=T_bus3106_L.1.0 conn=wye kV=0.120     kva=100 %R=1.12
+~ wdg=3 bus=T_bus3106_L.0.2 conn=wye kV=0.120     kva=100 %R=1.12
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3108
+//---------------------------------------------------------//
+
+New Transformer.T_3108 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3108.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3108_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3108_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3109
+//---------------------------------------------------------//
+
+New Transformer.T_3109 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3109.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3109_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3109_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3110
+//---------------------------------------------------------//
+
+New Transformer.T_3110 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3110.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3110_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3110_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3111
+//---------------------------------------------------------//
+
+New Transformer.T_3111 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3111.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3111_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3111_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3112
+//---------------------------------------------------------//
+
+New Transformer.T_3112 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3112.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3112_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3112_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3114
+//---------------------------------------------------------//
+
+New Transformer.T_3114 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3114.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3114_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3114_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3115
+//---------------------------------------------------------//
+
+New Transformer.T_3115 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3115.2.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3115_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3115_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3116
+//---------------------------------------------------------//
+
+New Transformer.T_3116 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3116.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3116_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3116_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3117
+//---------------------------------------------------------//
+
+New Transformer.T_3117 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3117.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3117_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3117_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3120
+//---------------------------------------------------------//
+
+New Transformer.T_3120 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3120.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3120_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3120_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3121
+//---------------------------------------------------------//
+
+New Transformer.T_3121 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3121.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3121_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3121_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3122
+//---------------------------------------------------------//
+
+New Transformer.T_3122 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3122.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3122_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3122_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3123
+//---------------------------------------------------------//
+
+New Transformer.T_3123 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3123.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3123_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3123_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3124
+//---------------------------------------------------------//
+
+New Transformer.T_3124 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3124.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3124_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3124_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3125
+//---------------------------------------------------------//
+
+New Transformer.T_3125 Phases=1 Windings=3 XHL=1.536  XHT=1.536  XLT=1.024
+~ wdg=1 bus=bus3125.2.0     conn=wye kV=7.9677    kva=15 %R=0.83
+~ wdg=2 bus=T_bus3125_L.1.0 conn=wye kV=0.120     kva=15 %R=1.66
+~ wdg=3 bus=T_bus3125_L.0.2 conn=wye kV=0.120     kva=15 %R=1.66
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3126
+//---------------------------------------------------------//
+
+New Transformer.T_3126 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3126.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3126_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3126_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3127
+//---------------------------------------------------------//
+
+New Transformer.T_3127 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3127.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3127_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3127_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3128
+//---------------------------------------------------------//
+
+New Transformer.T_3128 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3128.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3128_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3128_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3129
+//---------------------------------------------------------//
+
+New Transformer.T_3129 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3129.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3129_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3129_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3130
+//---------------------------------------------------------//
+
+New Transformer.T_3130 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3130.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3130_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3130_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- B
+//      	     Transformer at bus 3131
+//---------------------------------------------------------//
+
+New Transformer.T_3131 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3131.2.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3131_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3131_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3132
+//---------------------------------------------------------//
+
+New Transformer.T_3132 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3132.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3132_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3132_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3134
+//---------------------------------------------------------//
+
+New Transformer.T_3134 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3134.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3134_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3134_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3135
+//---------------------------------------------------------//
+
+New Transformer.T_3135 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3135.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3135_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3135_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3136
+//---------------------------------------------------------//
+
+New Transformer.T_3136 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3136.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3136_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3136_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3137
+//---------------------------------------------------------//
+
+New Transformer.T_3137 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3137.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3137_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3137_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3138
+//---------------------------------------------------------//
+
+New Transformer.T_3138 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3138.1.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3138_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3138_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- A
+//      	     Transformer at bus 3139
+//---------------------------------------------------------//
+
+New Transformer.T_3139 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3139.1.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3139_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3139_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3141
+//---------------------------------------------------------//
+
+New Transformer.T_3141 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3141.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3141_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3141_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3142
+//---------------------------------------------------------//
+
+New Transformer.T_3142 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3142.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3142_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3142_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3143
+//---------------------------------------------------------//
+
+New Transformer.T_3143 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3143.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3143_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3143_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3144
+//---------------------------------------------------------//
+
+New Transformer.T_3144 Phases=1 Windings=3 XHL=1.536  XHT=1.536  XLT=1.024
+~ wdg=1 bus=bus3144.3.0     conn=wye kV=7.9677    kva=15 %R=0.83
+~ wdg=2 bus=T_bus3144_L.1.0 conn=wye kV=0.120     kva=15 %R=1.66
+~ wdg=3 bus=T_bus3144_L.0.2 conn=wye kV=0.120     kva=15 %R=1.66
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3145
+//---------------------------------------------------------//
+
+New Transformer.T_3145 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3145.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3145_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3145_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3146
+//---------------------------------------------------------//
+
+New Transformer.T_3146 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3146.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3146_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3146_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3147
+//---------------------------------------------------------//
+
+New Transformer.T_3147 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3147.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3147_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3147_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3148
+//---------------------------------------------------------//
+
+New Transformer.T_3148 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3148.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3148_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3148_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3149
+//---------------------------------------------------------//
+
+New Transformer.T_3149 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3149.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3149_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3149_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3150
+//---------------------------------------------------------//
+
+New Transformer.T_3150 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3150.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3150_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3150_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3151
+//---------------------------------------------------------//
+
+New Transformer.T_3151 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3151.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3151_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3151_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3152
+//---------------------------------------------------------//
+
+New Transformer.T_3152 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3152.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3152_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3152_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3153
+//---------------------------------------------------------//
+
+New Transformer.T_3153 Phases=1 Windings=3 XHL=2.076  XHT=2.076  XLT=1.384
+~ wdg=1 bus=bus3153.3.0     conn=wye kV=7.9677    kva=37.5 %R=0.595
+~ wdg=2 bus=T_bus3153_L.1.0 conn=wye kV=0.120     kva=37.5 %R=1.19
+~ wdg=3 bus=T_bus3153_L.0.2 conn=wye kV=0.120     kva=37.5 %R=1.19
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3154
+//---------------------------------------------------------//
+
+New Transformer.T_3154 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3154.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3154_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3154_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3155
+//---------------------------------------------------------//
+
+New Transformer.T_3155 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3155.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3155_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3155_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3157
+//---------------------------------------------------------//
+
+New Transformer.T_3157 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3157.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3157_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3157_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3158
+//---------------------------------------------------------//
+
+New Transformer.T_3158 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3158.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3158_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3158_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3159
+//---------------------------------------------------------//
+
+New Transformer.T_3159 Phases=1 Windings=3 XHL=2.16  XHT=2.16  XLT=1.44
+~ wdg=1 bus=bus3159.3.0     conn=wye kV=7.9677    kva=50 %R=0.55
+~ wdg=2 bus=T_bus3159_L.1.0 conn=wye kV=0.120     kva=50 %R=1.1
+~ wdg=3 bus=T_bus3159_L.0.2 conn=wye kV=0.120     kva=50 %R=1.1
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3160
+//---------------------------------------------------------//
+
+New Transformer.T_3160 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3160.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3160_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3160_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3161
+//---------------------------------------------------------//
+
+New Transformer.T_3161 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3161.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3161_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3161_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+//---------------------------------------------------------//  ------------- C
+//      	     Transformer at bus 3162
+//---------------------------------------------------------//
+
+New Transformer.T_3162 Phases=1 Windings=3 XHL=2.256  XHT=2.256  XLT=1.504
+~ wdg=1 bus=bus3162.3.0     conn=wye kV=7.9677    kva=25 %R=0.665
+~ wdg=2 bus=T_bus3162_L.1.0 conn=wye kV=0.120     kva=25 %R=1.33 
+~ wdg=3 bus=T_bus3162_L.0.2 conn=wye kV=0.120     kva=25 %R=1.33 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
